@@ -2,7 +2,7 @@
 - name: Run playbook on the machine executing it
   hosts: localhost
   connection: local
-  gather_facts: false
+  gather_facts: true
 
   roles:
     - "{{ playbook_dir }}"
